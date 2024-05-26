@@ -18,11 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className}>
-        
-        {/* <Sidebar/> */}
+        <div className="flex flex-row bg-slate-100">
+          <Sidebar/>
         {children}
+        </div>
+          
         </body>
     </html>
   );
